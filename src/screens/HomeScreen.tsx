@@ -470,20 +470,20 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: '#fff' },
 
   // Top search
-  topContainer: { position: 'absolute', top: 50, left: 16, right: 16, zIndex: 20 },
+  topContainer: { position: 'absolute', top: 60, left: 16, right: 16, zIndex: 25 },
   searchRow: { flexDirection: 'row', alignItems: 'center' },
   searchContainer: {
-    flex: 1, backgroundColor: '#fff', borderRadius: 18, paddingHorizontal: 14, paddingVertical: 12,
+    flex: 1, backgroundColor: 'rgba(255,255,255,0.95)', borderRadius: 22, paddingHorizontal: 16, paddingVertical: 14,
     flexDirection: 'row', alignItems: 'center',
-    shadowColor: '#000', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.12, shadowRadius: 10, elevation: 6,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.15, shadowRadius: 12, elevation: 8,
   },
-  searchIcon: { fontSize: 16, marginRight: 8 },
-  searchInput: { flex: 1, fontSize: 15, color: '#111' },
+  searchIcon: { fontSize: 18, marginRight: 10 },
+  searchInput: { flex: 1, fontSize: 16, color: '#111', fontWeight: '500' },
   profileButton: {
-    backgroundColor: '#fff', padding: 13, borderRadius: 18, marginLeft: 10,
-    shadowColor: '#000', shadowOpacity: 0.12, shadowRadius: 8, elevation: 5,
+    backgroundColor: 'rgba(255,255,255,0.95)', padding: 14, borderRadius: 22, marginLeft: 12,
+    shadowColor: '#000', shadowOpacity: 0.15, shadowRadius: 10, elevation: 6,
   },
-  profileIcon: { fontSize: 20 },
+  profileIcon: { fontSize: 22 },
 
   // Dropdown
   dropdown: {
@@ -545,14 +545,14 @@ const styles = StyleSheet.create({
 
   // Bottom sheet (route comparison)
   bottomSheet: {
-    position: 'absolute', bottom: 20, left: 16, right: 16,
-    backgroundColor: '#fff', borderRadius: 28, padding: 24,
-    shadowColor: '#000', shadowOffset: { width: 0, height: -2 }, shadowOpacity: 0.12, shadowRadius: 16, elevation: 10,
-    zIndex: 20,
+    position: 'absolute', bottom: 30, left: 16, right: 16,
+    backgroundColor: 'rgba(255,255,255,0.98)', borderRadius: 32, padding: 24,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 10 }, shadowOpacity: 0.2, shadowRadius: 20, elevation: 15,
+    zIndex: 30, borderWidth: 1, borderColor: 'rgba(255,255,255,0.5)',
   },
-  sheetHandle: { width: 36, height: 4, backgroundColor: '#E0E0E0', borderRadius: 2, alignSelf: 'center', marginBottom: 18 },
-  sheetTitle: { fontSize: 20, fontWeight: '800', color: '#111', marginBottom: 16 },
-  routesContainer: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20 },
+  sheetHandle: { width: 40, height: 5, backgroundColor: '#E5E7EB', borderRadius: 2.5, alignSelf: 'center', marginBottom: 20 },
+  sheetTitle: { fontSize: 22, fontWeight: '800', color: '#111', marginBottom: 18, letterSpacing: -0.5 },
+  routesContainer: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 24 },
   routeOption: {
     alignItems: 'center', backgroundColor: '#F5F7FA', paddingVertical: 14,
     paddingHorizontal: 12, borderRadius: 18, width: '30%',
@@ -571,12 +571,13 @@ const styles = StyleSheet.create({
 
   // Tab Panel
   tabPanel: {
-    position: 'absolute', bottom: 16, left: 16, right: 16,
-    backgroundColor: '#fff', borderRadius: 28,
-    shadowColor: '#000', shadowOffset: { width: 0, height: -2 }, shadowOpacity: 0.1, shadowRadius: 14, elevation: 8,
-    height: 420, zIndex: 20, overflow: 'hidden',
+    position: 'absolute', bottom: 24, left: 16, right: 16,
+    backgroundColor: 'rgba(255,255,255,0.96)', borderRadius: 32,
+    shadowColor: '#000', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.15, shadowRadius: 16, elevation: 12,
+    height: 420, zIndex: 25, overflow: 'hidden',
+    borderWidth: 1, borderColor: 'rgba(255,255,255,0.4)',
   },
-  dragHandleContainer: { width: '100%', alignItems: 'center', paddingTop: 12, paddingBottom: 4 },
+  dragHandleContainer: { width: '100%', alignItems: 'center', paddingTop: 14, paddingBottom: 6 },
   tabHeader: {
     flexDirection: 'row', paddingTop: 16, paddingHorizontal: 8,
     borderBottomWidth: 1, borderBottomColor: '#F0F0F5',
